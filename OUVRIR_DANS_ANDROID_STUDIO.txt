@@ -1,0 +1,22 @@
+HeartCare AI 2.0 — GUIDE RAPIDE (Windows)
+
+1) Extraire l'archive ZIP.
+2) Android Studio > File > Open > choisir le dossier HeartCareAI
+   (celui contenant settings.gradle.kts).
+3) Attendre Gradle Sync et installer Android SDK API 36 si nécessaire.
+   Première ouverture : connexion Internet nécessaire pour les dépendances.
+4) Tools > Device Manager > démarrer un émulateur Pixel / Android API 35 ou 36.
+5) Sélectionner 'app' puis cliquer sur Run (▶).
+6) S'inscrire sur l'application, puis accéder au tableau de bord moderne.
+
+Dans Android Studio, ouvrir :
+app/src/main/java/dz/univ/alger1/heartcareai/ui/ModernPreviews.kt
+puis activer 'Split' ou 'Design' pour voir les prévisualisations Compose.
+
+La prédiction ML exige heart.csv (Kaggle) et l'entraînement Python ;
+le formulaire et l'historique restent disponibles sans modèle.
+
+Attention : application pédagogique uniquement, sans diagnostic médical.
+
+Le SDK Android n'est pas disponible dans l'environnement de génération :
+le build n'a pas été effectué ici. En cas d'erreur, transmettre le Build Output.
